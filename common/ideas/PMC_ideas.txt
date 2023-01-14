@@ -1,0 +1,17 @@
+ideas = {
+	# Special ones that can be applied on other countries through focus system.
+	country = {
+		private_military_contractors = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea generic_non_aligned_boost_idea" }
+			available = { always = yes}
+			#cancel = {}
+			allowed_civil_war = {always = yes }
+			removal_cost = -1
+			modifier = {
+				neutrality_drift = 0.05
+				experience_gain_army = 0.5
+				training_time_factor = -0.1
+			}
+		}
+	}
+}

@@ -1,0 +1,373 @@
+BM_inf_cat = {
+   BM_inf_USA_cat = {
+		icon = GFX_category_icon
+
+		visible = {
+			country_exists = USA
+			has_idea = private_military_contractors
+		}
+
+		custom_cost_trigger = {
+			check_variable = { treasury > 0.1 }
+		}
+
+		custom_cost_text = EPinfo_0_1
+		days_remove = 90
+		days_re_enable = 0
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+					type = infantry_weapons1
+					amount = 240
+					producer = USA
+			}
+
+			set_temp_variable = { treasury_change = -1 }
+			modify_treasury_effect = yes
+		 USA = {
+			set_temp_variable = { treasury_change = 1.5 }
+			modify_treasury_effect = yes
+		 }
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove BM_inf_USA_cat1"
+			#small_arms_USA = yes
+		}
+   }
+
+   BM_inf_USA_cat1 = {
+		icon = GFX_category_icon
+
+		visible = {
+			country_exists = USA
+			has_idea = private_military_contractors
+		}
+
+		custom_cost_trigger = {
+			check_variable = { treasury > 0.1 }
+		}
+
+		custom_cost_text = EPinfo_0_1
+		days_remove = 90
+		days_re_enable = 0
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+					type = infantry_weapons4
+					amount = 240
+					producer = USA
+			}
+
+			set_temp_variable = { treasury_change = -2 }
+			modify_treasury_effect = yes
+		 USA = {
+			set_temp_variable = { treasury_change = 2.25 }
+			modify_treasury_effect = yes
+		 }
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove BM_inf_USA_cat1"
+			#small_arms_USA = yes
+		}
+   }
+
+   BM_aa_USA_cat = {
+	icon = GFX_category_icon
+
+	visible = {
+			country_exists = USA
+			has_idea = private_military_contractors
+		}
+
+		custom_cost_trigger = {
+			check_variable = { treasury > 0.1 }
+		}
+
+		custom_cost_text = EPinfo_0_1
+		days_remove = 90
+		days_re_enable = 0
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+					type = Anti_Air_0
+					amount = 240
+					producer = USA
+			}
+
+			set_temp_variable = { treasury_change = -1 }
+			modify_treasury_effect = yes
+		 USA = {
+			set_temp_variable = { treasury_change = 0.75 }
+			modify_treasury_effect = yes
+		 }
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove BM_aa_USA_cat"
+			##manpads_USA = yes
+		}
+   }
+
+   BM_at_USA_cat = {
+	 icon = GFX_category_icon
+
+	 visible = {
+			country_exists = USA
+			has_idea = private_military_contractors
+		}
+
+		custom_cost_trigger = {
+			check_variable = { treasury > 0.1 }
+		}
+
+		custom_cost_text = EPinfo_0_1
+		days_remove = 90
+		days_re_enable = 0
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+					type = Anti_tank_1
+					amount = 240
+					producer = USA
+			}
+
+			set_temp_variable = { treasury_change = -2 }
+			modify_treasury_effect = yes
+		 USA = {
+			set_temp_variable = { treasury_change = 1.5 }
+			modify_treasury_effect = yes
+		 }
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove BM_at_USA_cat"
+			#atgm_USA = yes
+		}	 
+   }
+
+   BM_inf_SOV_cat = {
+		icon = GFX_category_icon
+
+		visible = {
+			country_exists = SOV
+			has_idea = private_military_contractors
+		}
+
+		custom_cost_trigger = {
+			check_variable = { treasury > 0.1 }
+		}
+
+		custom_cost_text = EPinfo_0_1
+		days_remove = 90
+		days_re_enable = 0
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+					type = infantry_weapons1
+					amount = 240
+					producer = SOV
+			}
+
+			set_temp_variable = { treasury_change = -1 }
+			modify_treasury_effect = yes
+		 SOV = {
+			set_temp_variable = { treasury_change = 0.75 }
+			modify_treasury_effect = yes
+		 }
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove BM_inf_SOV_cat"
+			#small_arms_SOV = yes
+		}
+   }
+
+    BM_inf_SOV_cat1 = {
+		icon = GFX_category_icon
+
+		visible = {
+			country_exists = SOV
+			has_idea = private_military_contractors
+		}
+
+		custom_cost_trigger = {
+			check_variable = { treasury > 0.1 }
+		}
+
+		custom_cost_text = EPinfo_0_1
+		days_remove = 90
+		days_re_enable = 0
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+					type = infantry_weapons3
+					amount = 240
+					producer = SOV
+			}
+
+			set_temp_variable = { treasury_change = -2 }
+			modify_treasury_effect = yes
+		 SOV = {
+			set_temp_variable = { treasury_change = 1.5 }
+			modify_treasury_effect = yes
+		 }
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove BM_inf_SOV_cat1"
+			#small_arms_SOV = yes
+		}
+   }
+
+   BM_cnc_SOV_cat = {
+	 icon = GFX_category_icon
+
+	 visible = {
+			country_exists = SOV
+			has_idea = private_military_contractors
+		}
+
+		custom_cost_trigger = {
+			check_variable = { treasury > 0.1 }
+		}
+
+		custom_cost_text = EPinfo_0_1
+		days_remove = 90
+		days_re_enable = 0
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+					type = command_control_equipment1
+					amount = 240
+					producer = SOV
+			}
+
+			set_temp_variable = { treasury_change = -0.5 }
+			modify_treasury_effect = yes
+		 SOV = {
+			set_temp_variable = { treasury_change = 0.375 }
+			modify_treasury_effect = yes
+		 }
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove BM_cnc_SOV_cat"
+			#cc_equi_SOV = yes
+		}
+	}
+
+	BM_hat_SOV_cat = {
+		icon = GFX_category_icon
+
+		 visible = {
+			country_exists = SOV
+			has_idea = private_military_contractors
+		}
+
+		custom_cost_trigger = {
+			check_variable = { treasury > 0.1 }
+		}
+
+		custom_cost_text = EPinfo_0_1
+		days_remove = 90
+		days_re_enable = 0
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+					type = Heavy_Anti_tank_1
+					amount = 240
+					producer = SOV
+			}
+
+			set_temp_variable = { treasury_change = -1 }
+			modify_treasury_effect = yes
+		 SOV = {
+			set_temp_variable = { treasury_change = 0.75 }
+			modify_treasury_effect = yes
+		 }
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove BM_hat_SOV_cat"
+			#atgm_SOV = yes
+		}
+
+	}
+
+
+   BM_inf_HEZ_cat = {
+		icon = GFX_category_icon
+
+		visible = {
+			country_exists = HEZ
+			has_idea = private_military_contractors
+		}
+
+		custom_cost_trigger = {
+			check_variable = { treasury > 0.1 }
+		}
+
+		custom_cost_text = EPinfo_0_1
+		days_remove = 90
+		days_re_enable = 0
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+					type = infantry_weapons1
+					amount = 240
+					producer = HEZ
+			}
+
+			set_temp_variable = { treasury_change = -0.5 }
+			modify_treasury_effect = yes
+		 HEZ = {
+			set_temp_variable = { treasury_change = 0.375 }
+			modify_treasury_effect = yes
+		 }
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove BM_inf_HEZ_cat"
+			#small_arms_HEZ = yes
+		}
+   }
+
+   BM_inf_ISI_cat = {
+		icon = GFX_category_icon
+
+		visible = {
+			country_exists = ISI
+			has_idea = private_military_contractors
+		}
+
+		custom_cost_trigger = {
+			check_variable = { treasury > 0.1 }
+		}
+
+		custom_cost_text = EPinfo_0_1
+		days_remove = 90
+		days_re_enable = 0
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+					type = infantry_weapons1
+					amount = 240
+					producer = ISI
+			}
+
+			set_temp_variable = { treasury_change = -0.5 }
+			modify_treasury_effect = yes
+		 ISI = {
+			set_temp_variable = { treasury_change = 0.375 }
+			modify_treasury_effect = yes
+		 }
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove BM_inf_ISI_cat"
+			#small_arms_ISI = yes
+		}
+   }
+}

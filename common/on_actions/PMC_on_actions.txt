@@ -1,0 +1,230 @@
+on_actions = {
+    on_peace = {
+        effect = {
+            if = {
+               limit = {THIS = { tag = SOV }}
+               
+               if = {
+                  limit = {LER = {is_in_faction = yes}}
+                  remove_from_faction = LER
+               } else_if = {
+                  limit = {BWC = {is_in_faction = yes}}
+                  remove_from_faction = BWC
+               } else_if = {
+                  limit = {MOT = {is_in_faction = yes}}
+                  remove_from_faction = MOT
+               }
+
+		         } else_if {
+                  limit = {THIS = { tag = USA }}
+               
+               if = {
+                  limit = {LER = {is_in_faction = yes}}
+                  remove_from_faction = LER
+               } else_if = {
+                  limit = {BWC = {is_in_faction = yes}}
+                  remove_from_faction = BWC
+               } else_if = {
+                  limit = {MOT = {is_in_faction = yes}}
+                  remove_from_faction = MOT
+                }
+               } else_if {
+                  limit = {THIS = { tag = CHI }}
+               
+               if = {
+                  limit = {LER = {is_in_faction = yes}}
+                  remove_from_faction = LER
+               } else_if = {
+                  limit = {BWC = {is_in_faction = yes}}
+                  remove_from_faction = BWC
+               } else_if = {
+                  limit = {MOT = {is_in_faction = yes}}
+                  remove_from_faction = MOT
+               }
+               }      
+            }
+      }
+    }
+
+   ##on_annex = {
+      ##effect = {
+        ##if = { 
+         ##limit = {ROOT = { tag = LER }
+                  ##FROM = { tag = CHE }}
+         
+         ##activate_decision = PMC_SOV_payment
+        ##}
+      ##}
+   ##}
+
+   on_capitulation = {
+      effect = {
+       if = {
+         AND = { limit = {
+               ROOT = { tag = FSA }
+               FROM = { tag = SYR }
+            } 
+            
+            limit = {
+               ROOT = { tag = NUS}
+               FROM = {tag = SYR}
+             }
+         }
+
+          if = {
+          limit = {LER = {is_in_faction = yes}}
+          remove_from_faction = LER
+          dismantle_faction = yes
+          } else_if = {
+          limit = {BWC = {is_in_faction = yes}}
+          remove_from_faction = BWC
+          dismantle_faction = yes
+          } else_if = {
+          limit = {MOT = {is_in_faction = yes}}
+          remove_from_faction = MOT
+          dismantle_faction = yes
+          }
+
+         } else_if = {
+            AND = { limit = {
+               ROOT = { tag = BAL }
+               FROM = { tag = CAR }
+            } 
+            
+            limit = {
+               ROOT = { tag = LOG}
+               FROM = {tag = CAR}
+             }
+
+            limit = {
+               ROOT = {tag = SEL}
+               FROM = {tag = CAR}
+            }
+
+           }
+         
+          if = {
+          limit = {LER = {is_in_faction = yes}}
+          remove_from_faction = LER
+          dismantle_faction = yes
+          } else_if = {
+          limit = {BWC = {is_in_faction = yes}}
+          remove_from_faction = BWC
+          dismantle_faction = yes
+          } else_if = {
+          limit = {MOT = {is_in_faction = yes}}
+          remove_from_faction = MOT
+          dismantle_faction = yes
+          }
+
+         } else_if = {
+            limit = {
+               ROOT = { tag = SUD }
+               FROM = { tag = SRF }
+            }  
+         
+          if = {
+          limit = {LER = {is_in_faction = yes}}
+          remove_from_faction = LER
+          dismantle_faction = yes
+          } else_if = {
+          limit = {BWC = {is_in_faction = yes}}
+          remove_from_faction = BWC
+          dismantle_faction = yes
+          } else_if = {
+          limit = {MOT = {is_in_faction = yes}}
+          remove_from_faction = MOT
+          dismantle_faction = yes
+          }
+
+         } else_if = {
+             AND = { limit = {
+               ROOT = { tag = GNC }
+               FROM = { tag = LBA }
+            } 
+            
+            limit = {
+               ROOT = { tag = GNA}
+               FROM = {tag = LBA}
+             }
+
+            limit = {
+               ROOT = {tag = HOR}
+               FROM = {tag = LBA}
+            }
+
+           }
+
+           set_temp_variable = { treasury_change = 1 }
+			    modify_treasury_effect = yes
+		        LBA = {
+			        set_temp_variable = { treasury_change = -1 }
+			        modify_treasury_effect = yes
+		        }
+
+          if = {
+          limit = {LER = {is_in_faction = yes}}
+          remove_from_faction = LER
+          dismantle_faction = yes
+          } else_if = {
+          limit = {BWC = {is_in_faction = yes}}
+          remove_from_faction = BWC
+          dismantle_faction = yes
+          } else_if = {
+          limit = {MOT = {is_in_faction = yes}}
+          remove_from_faction = MOT
+          dismantle_faction = yes
+          }
+
+         } else_if = {
+           limit = {
+               ROOT = { tag = SIE }
+               FROM = { tag = AFR }
+            }    
+         
+          if = {
+          limit = {LER = {is_in_faction = yes}}
+          remove_from_faction = LER
+          dismantle_faction = yes
+          } else_if = {
+          limit = {BWC = {is_in_faction = yes}}
+          remove_from_faction = BWC
+          dismantle_faction = yes
+          } else_if = {
+          limit = {MOT = {is_in_faction = yes}}
+          remove_from_faction = MOT
+          dismantle_faction = yes
+          }
+
+         } else_if = {
+            AND = { limit = {
+               ROOT = { tag = AQY }
+               FROM = { tag = YEM }
+            } 
+            
+            limit = {
+               ROOT = { tag = HOU}
+               FROM = {tag = YEM}
+             }
+           }
+
+          if = {
+          limit = {LER = {is_in_faction = yes}}
+          remove_from_faction = LER
+          dismantle_faction = yes
+          } else_if = {
+          limit = {BWC = {is_in_faction = yes}}
+          remove_from_faction = BWC
+          dismantle_faction = yes
+          } else_if = {
+          limit = {MOT = {is_in_faction = yes}}
+          remove_from_faction = MOT
+          dismantle_faction = yes
+          }
+
+         } else = {
+            log = "[GetDateText]: [Root.GetName]: PMC_on_action error"
+         } 
+      }
+   }       
+}

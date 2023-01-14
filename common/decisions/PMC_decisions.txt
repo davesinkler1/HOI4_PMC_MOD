@@ -1,0 +1,500 @@
+PMC_contracts = {
+    PMC_USA_contract = {
+        visible = {
+            has_idea = private_military_contractors
+            USA = {
+                has_war = yes
+            }
+        }
+
+        complete_effect = {
+            if = {
+                limit = {tag = LER}
+                USA = {
+                    add_to_faction = LER
+                }
+            }
+            else_if = {
+                limit = {tag = BWC}
+                USA = {
+                    add_to_faction = BWC
+                }
+          } else_if = {
+                limit = {tag = MOT}
+                USA = {
+                    add_to_faction = MOT
+                }
+          } else = {
+            log = "[GetDateText]: [Root.GetName]: PMC_contracts error"
+          }
+        }
+    }
+
+    PMC_SOV_contract = {
+        visible = {
+            has_idea = private_military_contractors
+            SOV = {
+                has_war = yes
+            }
+        }
+
+        complete_effect = {
+            if = {
+                limit = {tag = LER}
+                SOV = {
+                    add_to_faction = LER
+                }
+            }
+            else_if = {
+                limit = {tag = BWC}
+                SOV = {
+                    add_to_faction = BWC
+                }
+          } else_if = {
+                limit = {tag = MOT}
+                SOV = {
+                    add_to_faction = MOT
+                }
+          } else = {
+            log = "[GetDateText]: [Root.GetName]: PMC_contracts error"
+          }
+        }
+    }
+
+    PMC_CHI_contract = {
+        visible = {
+            has_idea = private_military_contractors
+            CHI = {
+                has_war = yes
+            }
+        }
+
+        complete_effect = {
+            if = {
+                limit = {tag = LER}
+                CHI = {
+                    add_to_faction = LER
+                }
+            }
+            else_if = {
+                limit = {tag = BWC}
+                CHI = {
+                    add_to_faction = BWC
+                }
+          } else_if = {
+                limit = {tag = MOT}
+                CHI = {
+                    add_to_faction = MOT
+                }
+          } else = {
+            log = "[GetDateText]: [Root.GetName]: PMC_contracts error"
+          }
+        }
+    }
+
+    PMC_SYR_contract = {
+        visible = {
+            has_idea = private_military_contractors
+            SYR = {
+                has_war = yes
+                has_war_with = FSA
+            }
+        }
+
+        complete_effect = {
+            if = {
+                limit = {tag = LER}
+                declare_war_on = {
+                    target = FSA
+                    type = annex_everything
+                }
+
+                declare_war_on = {
+                    target = NUS
+                    type = annex_everything
+                }
+
+                create_faction = "Peacekeeping Forces Association"
+                LER = {
+                    add_to_faction = SYR
+                }
+            }
+            else_if = {
+                limit = {tag = BWC}
+                declare_war_on = {
+                    target = FSA
+                    type = annex_everything
+                }
+
+                declare_war_on = {
+                    target = NUS
+                    type = annex_everything
+                }
+
+                create_faction = "Peacekeeping Forces Association"
+                BWC = {
+                    add_to_faction = SYR
+                }
+
+          } else_if = {
+                 limit = {tag = MOT}
+                declare_war_on = {
+                    target = FSA
+                    type = annex_everything
+                }
+
+                declare_war_on = {
+                    target = NUS
+                    type = annex_everything
+                }
+
+                create_faction = "Peacekeeping Forces Association"
+                MOT = {
+                    add_to_faction = SYR
+                }
+
+          } else = {
+            log = "[GetDateText]: [Root.GetName]: PMC_contracts error"
+          }
+        }
+    }
+
+    PMC_CAR_contract = {
+        visible = {
+            has_idea = private_military_contractors
+            CAR = {
+                has_war = yes
+                has_war_with = BAL
+            }
+        }
+
+        complete_effect = {
+            if = {
+                limit = {tag = LER}
+                declare_war_on = {
+                    target = BAL
+                    type = annex_everything
+                }
+
+                declare_war_on = {
+                    target = LOG
+                    type = annex_everything
+                }
+
+                declare_war_on = {
+                    target = SEL
+                    type = annex_everything
+                }
+
+                create_faction = "Peacekeeping Forces Association"
+                LER = {
+                    add_to_faction = CAR
+                }
+
+                
+            }
+            else_if = {
+                limit = {tag = BWC}
+                declare_war_on = {
+                    target = BAL
+                    type = annex_everything
+                }
+
+                declare_war_on = {
+                    target = LOG
+                    type = annex_everything
+                }
+
+                declare_war_on = {
+                    target = SEL
+                    type = annex_everything
+                }
+
+                create_faction = "Peacekeeping Forces Association"
+                BWC = {
+                    add_to_faction = CAR
+                }
+                
+          } else_if = {
+                limit = {tag = MOT}
+                declare_war_on = {
+                    target = BAL
+                    type = annex_everything
+                }
+
+                declare_war_on = {
+                    target = LOG
+                    type = annex_everything
+                }
+
+                declare_war_on = {
+                    target = SEL
+                    type = annex_everything
+                }
+
+               create_faction = "Peacekeeping Forces Association"
+                MOT = {
+                    add_to_faction = CAR
+                }
+
+          } else = {
+            log = "[GetDateText]: [Root.GetName]: PMC_contracts error"
+          }
+        }
+    }
+
+    PMC_SUD_contract = {
+        visible = {
+            has_idea = private_military_contractors
+            SUD = {
+                has_war = yes
+                has_war_with = SRF
+            }
+        }
+
+        complete_effect = {
+            if = {
+                limit = {tag = LER}
+                declare_war_on = {
+                    target = SRF
+                    type = annex_everything
+                }
+
+                create_faction = "Peacekeeping Forces Association"
+                LER = {
+                    add_to_faction = SUD
+                }
+            }
+         else_if = {
+                limit = {tag = BWC}
+                declare_war_on = {
+                    target = SRF
+                    type = annex_everything
+                }
+
+                create_faction = "Peacekeeping Forces Association"
+                BWC = {
+                    add_to_faction = SUD
+                }
+
+          } else_if = {
+                limit = {tag = MOT}
+               declare_war_on = {
+                    target = SRF
+                    type = annex_everything
+                }
+
+                create_faction = "Peacekeeping Forces Association"
+                MOT = {
+                    add_to_faction = SUD
+                }
+
+          } else = {
+            log = "[GetDateText]: [Root.GetName]: PMC_contracts error"
+          }
+        }
+    }
+
+    PMC_LBA_contract = {
+        visible = {
+            has_idea = private_military_contractors
+            LBA = {
+                has_war = yes
+                has_war_with = GNC
+            }
+        }
+
+        complete_effect = {
+            if = {
+                limit = {tag = LER}
+                declare_war_on = {
+                    target = GNC
+                    type = annex_everything
+                }
+
+                declare_war_on = {
+                    target = GNA
+                    type = annex_everything
+                }
+
+                declare_war_on = {
+                    target = HOR
+                    type = annex_everything
+                }
+
+                create_faction = "Peacekeeping Forces Association"
+                LER = {
+                    add_to_faction = LBA
+                }
+            
+            }
+            else_if = {
+                limit = {tag = BWC}
+                declare_war_on = {
+                    target = GNC
+                    type = annex_everything
+                }
+
+                declare_war_on = {
+                    target = GNA
+                    type = annex_everything
+                }
+
+                declare_war_on = {
+                    target = HOR
+                    type = annex_everything
+                }
+
+                create_faction = "Peacekeeping Forces Association"
+                BWC = {
+                    add_to_faction = LBA
+                }
+                
+          } else_if = {
+                limit = {tag = MOT}
+                declare_war_on = {
+                    target = GNC
+                    type = annex_everything
+                }
+
+                declare_war_on = {
+                    target = GNA
+                    type = annex_everything
+                }
+
+                declare_war_on = {
+                    target = HOR
+                    type = annex_everything
+                }
+
+                create_faction = "Peacekeeping Forces Association"
+                MOT = {
+                    add_to_faction = LBA
+                }
+                
+          } else = {
+            log = "[GetDateText]: [Root.GetName]: PMC_contracts error"
+          }
+        }
+    }
+
+    PMC_SIE_contract = {
+        visible = {
+            has_idea = private_military_contractors
+            SUD = {
+                has_war = yes
+                has_war_with = AFR
+            }
+        }
+
+        complete_effect = {
+            if = {
+                limit = {tag = LER}
+                declare_war_on = {
+                    target = AFR
+                    type = annex_everything
+                }
+
+                create_faction = "Peacekeeping Forces Association"
+                LER = {
+                    add_to_faction = SIE
+                }
+            }
+         else_if = {
+                limit = {tag = BWC}
+                declare_war_on = {
+                    target = AFR
+                    type = annex_everything
+                }
+
+                create_faction = "Peacekeeping Forces Association"
+                BWC = {
+                    add_to_faction = SIE
+                }
+        
+          } else_if = {
+                limit = {tag = MOT}
+               declare_war_on = {
+                    target = AFR
+                    type = annex_everything
+                }
+
+                create_faction = "Peacekeeping Forces Association"
+                MOT = {
+                    add_to_faction = SIE
+                }
+
+          } else = {
+            log = "[GetDateText]: [Root.GetName]: PMC_contracts error"
+          }
+        }
+    }
+
+    PMC_YEM_contract = {
+        visible = {
+            has_idea = private_military_contractors
+            YEM = {
+                has_war = yes
+                has_war_with = AQY
+            }
+        }
+
+        complete_effect = {
+            if = {
+                limit = {tag = LER}
+                declare_war_on = {
+                    target = AQY
+                    type = annex_everything
+                }
+
+                declare_war_on = {
+                    target = HOU
+                    type = annex_everything
+                }
+
+                create_faction = "Peacekeeping Forces Association"
+                LER = {
+                    add_to_faction = YEM
+                }
+                
+            }
+            else_if = {
+                limit = {tag = BWC}
+                 declare_war_on = {
+                    target = AQY
+                    type = annex_everything
+                }
+
+                declare_war_on = {
+                    target = HOU
+                    type = annex_everything
+                }
+
+                create_faction = "Peacekeeping Forces Association"
+                BWC = {
+                    add_to_faction = YEM
+                }
+                
+          } else_if = {
+                limit = {tag = MOT}
+                declare_war_on = {
+                    target = AQY
+                    type = annex_everything
+                }
+
+                declare_war_on = {
+                    target = HOU
+                    type = annex_everything
+                }
+
+                create_faction = "Peacekeeping Forces Association"
+                MOT = {
+                    add_to_faction = YEM
+                }
+
+          } else = {
+             log = "[GetDateText]: [Root.GetName]: PMC_contracts error"
+          }
+        }
+    }
+}

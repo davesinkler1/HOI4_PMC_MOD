@@ -1,0 +1,290 @@
+BM_vhc_cat = {
+    BM_vhc_SOV_cat = {
+        	icon = GFX_category_icon
+
+		 visible = {
+			country_exists = SOV
+			has_idea = private_military_contractors
+		 }
+
+		 custom_cost_trigger = {
+			check_variable = { treasury > 0.1 }
+		 }
+
+		 custom_cost_text = EPinfo_0_1
+		 days_remove = 90
+		 days_re_enable = 0
+
+		 complete_effect = {
+			add_equipment_to_stockpile = {
+					type = APC_1
+					amount = 240
+					producer = SOV
+			}
+
+			set_temp_variable = { treasury_change = -0.5 }
+			modify_treasury_effect = yes
+		 SOV = {
+			set_temp_variable = { treasury_change = 0.375 }
+			modify_treasury_effect = yes
+		 }
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove BM_vhc_SOV_cat"
+		}
+    }
+
+    BM_vhc_SOV_cat1 = {
+        	icon = GFX_category_icon
+
+		 visible = {
+			country_exists = SOV
+			has_idea = private_military_contractors
+		 }
+
+		 custom_cost_trigger = {
+			check_variable = { treasury > 0.1 }
+		 }
+
+		 custom_cost_text = EPinfo_0_1
+		 days_remove = 90
+		 days_re_enable = 0
+
+		 complete_effect = {
+			add_equipment_to_stockpile = {
+					type = IFV_2
+					amount = 240
+					producer = SOV
+			}
+
+			set_temp_variable = { treasury_change = -1 }
+			modify_treasury_effect = yes
+		 SOV = {
+			set_temp_variable = { treasury_change = 1.5 }
+			modify_treasury_effect = yes
+		 }
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove BM_vhc_SOV_cat1"
+		}
+    }
+
+     BM_vhc_SOV_cat2 = {
+        	icon = GFX_category_icon
+
+		 visible = {
+			country_exists = SOV
+			has_idea = private_military_contractors
+		 }
+
+		 custom_cost_trigger = {
+			check_variable = { treasury > 0.1 }
+		 }
+
+		 custom_cost_text = EPinfo_0_1
+		 days_remove = 90
+		 days_re_enable = 0
+
+		 complete_effect = {
+			add_equipment_to_stockpile = {
+					type = Rec_tank_1
+					amount = 240
+					producer = SOV
+			}
+
+			set_temp_variable = { treasury_change = -2 }
+			modify_treasury_effect = yes
+		 SOV = {
+			set_temp_variable = { treasury_change = 2.25 }
+			modify_treasury_effect = yes
+		 }
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove BM_vhc_SOV_cat"
+		}
+    }
+
+    BM_vhc_SER_cat = {
+        	icon = GFX_category_icon
+
+		 visible = {
+			country_exists = SER
+			has_idea = private_military_contractors
+		 }
+
+		 custom_cost_trigger = {
+			check_variable = { treasury > 0.1 }
+		 }
+
+		 custom_cost_text = EPinfo_0_1
+		 days_remove = 90
+		 days_re_enable = 0
+
+		 complete_effect = {
+			add_equipment_to_stockpile = {
+					type = APC_2
+					amount = 240
+					producer = SER
+			}
+
+			set_temp_variable = { treasury_change = -1 }
+			modify_treasury_effect = yes
+		 SER = {
+			set_temp_variable = { treasury_change = 1.5 }
+			modify_treasury_effect = yes
+		 }
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove BM_vhc_SER_cat"
+		}
+    }
+
+    BM_vhc_SER_cat1 = {
+        	icon = GFX_category_icon
+
+		 visible = {
+			country_exists = SER
+			has_idea = private_military_contractors
+		 }
+
+		 custom_cost_trigger = {
+			check_variable = { treasury > 0.1 }
+		 }
+
+		 custom_cost_text = EPinfo_0_1
+		 days_remove = 90
+		 days_re_enable = 0
+
+		 complete_effect = {
+			add_equipment_to_stockpile = {
+					type = IFV_2
+					amount = 240
+					producer = SER
+			}
+
+			set_temp_variable = { treasury_change = -1 }
+			modify_treasury_effect = yes
+		 SER = {
+			set_temp_variable = { treasury_change = 1.5 }
+			modify_treasury_effect = yes
+		 }
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove BM_vhc_SER_cat1"
+		}
+    }
+
+    BM_vhc_SER_cat2 = {
+        	icon = GFX_category_icon
+
+		 visible = {
+			country_exists = SER
+			has_idea = private_military_contractors
+		 }
+
+		 custom_cost_trigger = {
+			check_variable = { treasury > 0.1 }
+		 }
+
+		 custom_cost_text = EPinfo_0_1
+		 days_remove = 90
+		 days_re_enable = 0
+
+		 complete_effect = {
+			add_equipment_to_stockpile = {
+					type = util_vehicle_1
+					amount = 240
+					producer = SER
+			}
+
+			set_temp_variable = { treasury_change = -0.5 }
+			modify_treasury_effect = yes
+		 SER = {
+			set_temp_variable = { treasury_change = 0.375}
+			modify_treasury_effect = yes
+		 }
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove BM_vhc_SER_cat2"
+		}
+    }
+
+    BM_vhc_ISI_cat = {
+         icon = GFX_category_icon
+
+		 visible = {
+			country_exists = ISI
+			has_idea = private_military_contractors
+		 }
+
+		 custom_cost_trigger = {
+			check_variable = { treasury > 0.1 }
+		 }
+
+		 custom_cost_text = EPinfo_0_1
+		 days_remove = 90
+		 days_re_enable = 0
+
+		 complete_effect = {
+			add_equipment_to_stockpile = {
+					type = util_vehicle_1
+					amount = 240
+					producer = ISI
+			}
+
+			set_temp_variable = { treasury_change = -0.5 }
+			modify_treasury_effect = yes
+		 ISI = {
+			set_temp_variable = { treasury_change = 0.375 }
+			modify_treasury_effect = yes
+		 }
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove BM_vhc_ISI_cat"
+		}
+    }
+
+    BM_vhc_USA_cat = {
+         icon = GFX_category_icon
+
+		 visible = {
+			country_exists = USA
+			has_idea = private_military_contractors
+		 }
+
+		 custom_cost_trigger = {
+			check_variable = { treasury > 0.1 }
+		 }
+
+		 custom_cost_text = EPinfo_0_1
+		 days_remove = 90
+		 days_re_enable = 0
+
+		 complete_effect = {
+			add_equipment_to_stockpile = {
+					type = util_vehicle_2
+					amount = 240
+					producer = USA
+			}
+
+			set_temp_variable = { treasury_change = -1 }
+			modify_treasury_effect = yes
+		 USA = {
+			set_temp_variable = { treasury_change = 1.5 }
+			modify_treasury_effect = yes
+		 }
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove BM_vhc_USA_cat"
+		}
+    }
+    
+}
