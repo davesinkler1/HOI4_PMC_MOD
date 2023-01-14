@@ -1,0 +1,372 @@
+
+add_namespace = pmc
+
+country_event = {
+    id = pmc.1
+    title = "Payment for sent forces"
+    desc = "Payment for your works"
+    picture = GFX_united_states_dollar
+
+    trigger = {
+        OR = {
+            SOV = {received_expeditionary_forces = {
+            sender = LER
+            value > 0
+        }}
+
+        SOV = {received_expeditionary_forces = {
+            sender = MOT
+            value > 0
+        }}
+
+        SOV = {received_expeditionary_forces = {
+            sender = BWC
+            value > 0
+        }}
+        }
+    }
+
+    option = {
+        name = "Accept Payment"
+        set_temp_variable = { treasury_change = 5 }
+		modify_treasury_effect = yes 
+		SOV = {
+		   set_temp_variable = { treasury_change = -5 }
+		   modify_treasury_effect = yes
+		}      
+    }
+
+}
+
+country_event = {
+    id = pmc.2
+    title = "Payment for sent forces"
+    desc = "Payment for your works"
+    picture = GFX_united_states_dollar
+
+    trigger = {
+        OR = {
+            CHI = {received_expeditionary_forces = {
+            sender = LER
+            value > 0
+        }}
+
+        CHI = {received_expeditionary_forces = {
+            sender = MOT
+            value > 0
+        }}
+
+        CHI = {received_expeditionary_forces = {
+            sender = BWC
+            value > 0
+        }}
+        }
+    }
+
+    option = {
+        name = "Accept Payment"
+        set_temp_variable = { treasury_change = 5 }
+		modify_treasury_effect = yes 
+		CHI = {
+		   set_temp_variable = { treasury_change = -5 }
+		   modify_treasury_effect = yes
+		}      
+    }
+
+}
+
+country_event = {
+    id = pmc.3
+    title = "Payment for sent forces"
+    desc = "Payment for your works"
+    picture = GFX_united_states_dollar
+
+    trigger = {
+        OR = {
+            USA = {received_expeditionary_forces = {
+            sender = LER
+            value > 0
+        }}
+
+        USA = {received_expeditionary_forces = {
+            sender = MOT
+            value > 0
+        }}
+
+        USA = {received_expeditionary_forces = {
+            sender = BWC
+            value > 0
+        }}
+        }
+    }
+
+    option = {
+        name = "Accept Payment"
+        set_temp_variable = { treasury_change = 5 }
+		modify_treasury_effect = yes 
+		USA = {
+		   set_temp_variable = { treasury_change = -5 }
+		   modify_treasury_effect = yes
+		}      
+    }
+
+}
+
+country_event = {
+    id = pmc.4
+    title = "Payment for sent forces"
+    desc = "Payment for your works"
+    picture = GFX_united_states_dollar
+
+    trigger = {
+        OR = {
+            CHI = {received_expeditionary_forces = {
+            sender = LER
+            value > 0
+        }}
+
+        CHI = {received_expeditionary_forces = {
+            sender = MOT
+            value > 0
+        }}
+
+        CHI = {received_expeditionary_forces = {
+            sender = BWC
+            value > 0
+        }}
+        }
+    }
+
+    option = {
+        name = "Accept Payment"
+        set_temp_variable = { treasury_change = 5 }
+		modify_treasury_effect = yes 
+		CHI = {
+		   set_temp_variable = { treasury_change = -5 }
+		   modify_treasury_effect = yes
+		}      
+    }
+
+}
+
+country_event = {
+    id = pmc.5
+    title = "Payment for sent forces"
+    desc = "Payment for your works"
+    picture = GFX_united_states_dollar
+
+    trigger = {
+        OR = {
+            SYR = {received_expeditionary_forces = {
+            sender = LER
+            value > 0
+        }}
+
+        SYR = {received_expeditionary_forces = {
+            sender = MOT
+            value > 0
+        }}
+
+        SYR = {received_expeditionary_forces = {
+            sender = BWC
+            value > 0
+        }}
+        }
+    }
+
+    option = {
+        name = "Accept Payment"
+        set_temp_variable = { treasury_change = 5 }
+		modify_treasury_effect = yes 
+		SYR = {
+		   set_temp_variable = { treasury_change = -5 }
+		   modify_treasury_effect = yes
+		}      
+    }
+
+}
+
+country_event = {
+    id = pmc.6
+    title = "Payment for sent forces"
+    desc = "Payment for your works"
+    picture = GFX_united_states_dollar
+
+    trigger = {
+        OR = {
+            CAR = {received_expeditionary_forces = {
+            sender = LER
+            value > 0
+        }}
+
+        CAR = {received_expeditionary_forces = {
+            sender = MOT
+            value > 0
+        }}
+
+        CAR = {received_expeditionary_forces = {
+            sender = BWC
+            value > 0
+        }}
+        }
+    }
+
+    option = {
+        name = "Accept Payment"
+        set_temp_variable = { treasury_change = 5 }
+		modify_treasury_effect = yes 
+		CAR = {
+		   set_temp_variable = { treasury_change = -5 }
+		   modify_treasury_effect = yes
+		}      
+    }
+
+}
+
+country_event = {
+    id = pmc.7
+    title = "Payment for sent forces"
+    desc = "Payment for your works"
+    picture = GFX_united_states_dollar
+
+    trigger = {
+        OR = {
+            SUD = {received_expeditionary_forces = {
+            sender = LER
+            value > 0
+        }}
+
+        SUD = {received_expeditionary_forces = {
+            sender = MOT
+            value > 0
+        }}
+
+        SUD = {received_expeditionary_forces = {
+            sender = BWC
+            value > 0
+        }}
+        }
+    }
+
+    option = {
+        name = "Accept Payment"
+        set_temp_variable = { treasury_change = 5 }
+		modify_treasury_effect = yes 
+		SUD = {
+		   set_temp_variable = { treasury_change = -5 }
+		   modify_treasury_effect = yes
+		}      
+    }
+
+}
+
+country_event = {
+    id = pmc.8
+    title = "Payment for sent forces"
+    desc = "Payment for your works"
+    picture = GFX_united_states_dollar
+
+    trigger = {
+        OR = {
+            LBA = {received_expeditionary_forces = {
+            sender = LER
+            value > 0
+        }}
+
+        LBA = {received_expeditionary_forces = {
+            sender = MOT
+            value > 0
+        }}
+
+        LBA = {received_expeditionary_forces = {
+            sender = BWC
+            value > 0
+        }}
+        }
+    }
+
+    option = {
+        name = "Accept Payment"
+        set_temp_variable = { treasury_change = 5 }
+		modify_treasury_effect = yes 
+		LBA = {
+		   set_temp_variable = { treasury_change = -5 }
+		   modify_treasury_effect = yes
+		}      
+    }
+
+}
+
+country_event = {
+    id = pmc.9
+    title = "Payment for sent forces"
+    desc = "Payment for your works"
+    picture = GFX_united_states_dollar
+
+    trigger = {
+        OR = {
+            SIE = {received_expeditionary_forces = {
+            sender = LER
+            value > 0
+        }}
+
+        SIE = {received_expeditionary_forces = {
+            sender = MOT
+            value > 0
+        }}
+
+        SIE = {received_expeditionary_forces = {
+            sender = BWC
+            value > 0
+        }}
+        }
+    }
+
+    option = {
+        name = "Accept Payment"
+        set_temp_variable = { treasury_change = 5 }
+		modify_treasury_effect = yes 
+		SIE = {
+		   set_temp_variable = { treasury_change = -5 }
+		   modify_treasury_effect = yes
+		}      
+    }
+
+}
+
+country_event = {
+    id = pmc.10
+    title = "Payment for sent forces"
+    desc = "Payment for your works"
+    picture = GFX_united_states_dollar
+
+    trigger = {
+        OR = {
+            YEM = {received_expeditionary_forces = {
+            sender = LER
+            value > 0
+        }}
+
+        YEM = {received_expeditionary_forces = {
+            sender = MOT
+            value > 0
+        }}
+
+        YEM = {received_expeditionary_forces = {
+            sender = BWC
+            value > 0
+        }}
+        }
+    }
+
+    option = {
+        name = "Accept Payment"
+        set_temp_variable = { treasury_change = 5 }
+		modify_treasury_effect = yes 
+		YEM = {
+		   set_temp_variable = { treasury_change = -5 }
+		   modify_treasury_effect = yes
+		}      
+    }
+
+}
